@@ -1,0 +1,141 @@
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-top: 0.5px solid rgba(195, 194, 197, 0.933);
+    background-color: rgb(251, 254, 255);
+    background-image: url('../images/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.title_contact {
+   
+    font-size: 50px;
+    font-weight: 700;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(53, 53, 54);
+}
+
+.media {
+    width: 100%;
+   margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+.position_contact {
+    margin-top: auto;
+}
+
+
+.contact_tel {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(53, 53, 54);
+    padding:0 -700px;
+    text-align: start;
+    line-height: 80px;
+}
+
+
+.social  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 100px;
+}
+
+.social  li a {
+    font-size: 30px;
+    color: rgb(53, 53, 54);
+    transition: all .3s ease-in-out;
+    border-right: 1px solid rgb(73, 20, 197);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social  li a:hover {
+    color: rgb(73, 20, 197);
+}
+
+.social  li .drib {
+    border: none;
+}
+
+
+
+
+@media screen and (max-width : 768px) {
+    .contact {
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+    }
+
+    .media {
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .contact_tel {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    
+    .social {
+        margin-bottom: 130px;
+    }
+}
+
+
+
+/*................FOOTER......................*/
+
+
+.footer {
+    width: 100%;
+    height: 200px;
+    /* background-image: url('../images/footer.jpg'); */
+    background-repeat: no-repeat;
+    object-fit: contain;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 0.5px solid rgba(195, 194, 197, 0.933);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.footer  p {
+    color: rgb(172, 167, 187);
+    font-size: 25px;
+    margin-top: 100px;
+    text-align: center;
+}
+

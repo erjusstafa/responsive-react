@@ -1,0 +1,127 @@
+
+.home{
+    background-image: url('../images/e.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover; /*kur zmadhojm bg zmadhohet dhe img sipas ekranit*/
+    z-index: 20;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid rgba(195, 194, 197, 0.933);
+    background-color: rgb(251, 254, 255);
+}
+/* ---------------HOME-------------------*/
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10vw 10vw 0 15vw;
+    overflow: hidden;
+}
+.images > img  {
+    position: relative;
+    left: 10%;
+    width: 100%;
+       }
+
+    .desc {
+        width: 100%;
+    }
+
+    .desc > Button {
+        padding : 25px;
+        width: 200px;
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(to bottom right, rgb(69, 95, 240) , rgb(34, 115, 182));
+    }
+
+    .desc  h1 {
+        width: 100%;
+        font-size: 60px;
+        font-weight: 800;
+        overflow: hidden;
+        color: rgb(165, 159, 159);
+    }
+
+    .desc  p {
+        font-size: 20px;
+        overflow: hidden;
+        color: rgb(168, 164, 164);
+    }
+
+
+    /* Responsive*/
+
+
+    @media screen and (max-width: 768px){
+        .home {
+            width: 100%;
+            overflow: hidden;
+        }
+    
+        .nav_bar{
+            width: 100%;
+            overflow: hidden;            /*nk lejon te dalin te dhenat jashte height dhe width*/
+            display: flex;
+            flex-direction: column;   
+            height: auto;
+            background-color: rgb(61, 119, 245);
+        }
+
+        .logo_airbnb{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items : center;
+        }
+
+        
+       .list_one {
+           width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+
+        }
+
+        
+    }
+ 
+
+
+    @media only screen and (max-width: 768px){
+
+        .column {
+            flex-direction: column-reverse;
+            margin-top: 400px;
+        }   
+
+      
+
+        .desc  {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .desc > h1 {
+           
+            color :  rgb(53, 53, 54);
+        }
+
+        .desc > Button {
+            overflow: auto;
+            max-width: 200px;
+            margin-top: 30px;
+        }
+       
+    }

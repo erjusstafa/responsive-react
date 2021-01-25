@@ -1,0 +1,89 @@
+
+.blog {
+    min-height: auto;
+    width: 100%;
+    background-color: rgb(251, 254, 255);
+
+}
+
+
+.blog_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    padding: 210px 0;
+}
+
+.img {
+    background-image: url('../images//coding-isometric-08.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    overflow: hidden;
+}
+
+.prgh {
+    display: flex ;
+    flex-direction: column;
+    line-height: 100px;
+    overflow: hidden;
+}
+
+.prgh h2 {
+    font-size: 20px;
+    color: lightgray;
+}
+.prgh h1 {
+    font-size: 25px;
+    color: rgb(60, 63, 63);
+}
+
+.prgh > p {
+    width: 600px;
+    line-height: 20px;
+    color: rgb(182, 179, 179);
+}
+
+.computer {
+    color: lightgreen;
+    font-size: 40px;
+}
+
+.btn_blog Button {
+    padding : 25px;
+    width: 250px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(117, 136, 243) , rgb(54, 235, 123));
+}
+
+
+
+/*------------------RESPONSIVE--------------------*/
+
+@media screen and (max-width : 768px) {
+   .blog_container{
+       flex-direction: column;
+       overflow: hidden;
+       align-items: center;
+   }
+   .img{
+       width: 30%;
+   }
+
+   .prgh {
+       text-align: center;
+   }
+   .prgh p {
+       height: 150px;
+       width: 100%;
+       text-align: center;
+   }
+
+   .prgh .computer {
+       margin-top: 50px;
+   }
+   
+}

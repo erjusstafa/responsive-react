@@ -1,0 +1,128 @@
+
+
+.nav_bar  {
+    scroll-behavior : smooth .3s;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient( to bottom right , hsl(271, 52%, 56%) , hsl(273, 73%, 49%));
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.logo_airbnb {
+    display: flex;
+    flex-direction: row;
+    margin-right: 500px;
+    justify-content: space-evenly;
+
+}
+.dribble {
+    font-size: 70px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family : 'Chiller';
+}
+
+ .air_bnb{
+     
+    font-size: 70px;
+    font-weight: 700;
+     color: rgb(201, 202, 202);
+     cursor: pointer;
+    }
+
+.link{
+    position: static;
+    text-decoration: none;
+    color: white;
+
+}
+
+ .list_one    {
+     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+
+.list_one li {
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: linear .3s ;
+}
+
+.list_one li:hover {
+    transform: scale(1.2);
+    
+}
+
+
+
+.hire_me > Button {
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    transition: .2s ease-in;
+    overflow: hidden;
+    font-family: sans-serif;
+    text-transform: none;
+    color : rgb(34, 115, 182);
+    border-radius: 50px;
+    
+}
+
+.hire_me > Button:hover  {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Respsonsive*/
+
+@media screen and (max-width: 768px){
+    
+
+    .nav_bar{
+        width: 100%;
+        overflow: hidden;            /*nk lejon te dalin te dhenat jashte height dhe width*/
+        display: flex;
+        flex-direction: column;   
+        height: auto;
+    }
+
+    .logo_airbnb{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items : center;
+    }
+
+    
+   .list_one {
+       width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+
+    .hire_me > Button  {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    
+}
